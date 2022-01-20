@@ -1,0 +1,29 @@
+.my-container {
+    margin: 300px auto;
+    transition: 200ms ease-in;
+    width: 100%;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.animation {
+    color: red;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    animation: infiniteRotation 3000ms infinite;
+}
+
+@keyframes infiniteRotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
